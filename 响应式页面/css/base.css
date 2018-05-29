@@ -1,0 +1,925 @@
+/*默认基本样式*/
+
+/*设置默认body样式*/
+body{
+    color: #797979;
+    background: #f2f2f2;
+    font-family: 'Ruda', sans-serif;
+    padding: 0px !important;
+    margin: 0px !important;
+    font-size: 13px;
+}
+
+/*默认的清除浮动*/
+.claearfix {
+	content: ".";
+	/*height: 0px;*/
+	clear: both;
+	display: block;
+	overflow: hidden;
+
+}
+/*默认白色字体*/
+.f{
+  color: #fff!important;
+}
+
+
+
+/*默认宝蓝色*/
+.blue {
+  color: #68dff0;
+}
+
+
+
+*{margin:0;padding:0;}
+/*默认*/
+html, body, div, span, iframe, h1, h2, h3, h4, h5, h6, p,
+ blockquote, pre, a, address, big, cite, code, del, em, img,
+  ins, small, strong, var, b, u, i, dl, dt, dd, ol, ul,
+   li, fieldset, form, label, legend 
+   {
+    margin:0px; padding:0px;
+   }
+/*设置ico图标样式*/
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?8pgsi8');
+  src:  url('../fonts/icomoon.eot?8pgsi8#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?8pgsi8') format('truetype'),
+    url('../fonts/icomoon.woff?8pgsi8') format('woff'),
+    url('../fonts/icomoon.svg?8pgsi8#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/*清除a标签的下划线*/
+a {
+	text-decoration: none;
+   color: #aeb2b7;
+}
+ul {
+	list-style: none;
+}
+
+h5 {
+  padding: 0px;
+  margin:0px;
+}
+
+/*头部和尾部的样式*/
+header {
+    max-height: 60px;
+    width: 100%;
+    padding: 0 15px;
+    background: yellow;
+    /*display: block!important;*/
+    height: 100%;
+}
+
+footer {
+   max-height: 30px;
+   height: 100%;
+    width: 100%;
+    padding: 0 1px;
+  background:#68dff0;
+  text-align: center;
+  line-height: 30px;
+}
+header {
+  position:  fixed;
+  top:0px;
+  left:0px; 
+}
+/*头部和尾部的背景*/
+.black_bg {
+    background: #ffd777;
+    border-bottom: 1px solid #c9aa5f;
+    z-index: 99;
+}
+/*头部的样式*/
+ header .head_ico {
+ 	font-family: "icomoon";
+ 	font-style: normal;
+ 	font-size:20px;
+ 	color: #797979;
+
+
+ }
+/*   header  {
+    max-height: 60px;
+    height: 60px;
+  }*/
+ /*头部样式的左边ico图标*/
+ .head_content .ico_left {
+ 	float: left;
+ 	padding-right: 15px;
+    margin-top: 20px;
+ 	
+ }
+  /*头部样式的中间单词*/
+  .head_content .logo_a {
+  	font-size: 18px;
+    color: #ffffff;
+    float: left;
+    margin-top: 19px;
+    text-transform: uppercase;
+  }
+  /*单词的字体粗细*/
+ .head_content .logo_a b {
+ 	font-weight: 900;
+  }
+
+  .header_content {
+  	float: left;
+  	margin-left: 55px;
+    margin-top: 10px;
+  }
+
+  .header_content .aaa {
+  	display: block;
+  
+  }
+  .header_content .li {
+  	width: 30px;
+  	height: 30px;
+  	display: inline-block;
+  	border: 1px solid #797979;
+  	border-radius: 5px;
+  	line-height: 30px;
+  	text-align: center;
+  	position: relative;
+  	margin-right: 10px;
+  }
+    .header_content li i {
+    	font-size: 16px;
+    	font-family:  "icomoon";
+    	font-style: normal;
+    	color: #797979;
+    	display: inline-block;
+
+    }
+     .header_content .ab {
+      position: relative;
+    }
+    .header_content li .ico_span{
+    	position: absolute;
+    	width: 18px;
+    	height: 18px;
+      line-height: 18px;
+    	background-color: #68dff0;
+    	color:#fff;
+    	border-radius: 50%;
+    	display: inline-block;
+    	padding-top: -10px;
+      text-align: center;
+      z-index: 99;
+      font-size: 14px;
+        top: -8px;
+     }
+    
+    .header_content li .span_4 {
+        	left: 65px; 
+    }
+    .header_content li .span_5 {
+    	left: 20px;
+    }
+
+
+
+    .head_content  .logo_right {
+     	float: right;
+     	margin-right: 15px;
+     }
+    .head_content  .logout {
+     	color: #f2f2f2;
+	    border: 1px solid #64c3c2 !important;
+	    display: block;
+	    padding: 5px 15px;
+	    margin-right: 15px;
+	    background: #68dff0;
+	    margin-top: 15px;
+	    border-radius: 5px;
+     }
+
+
+     /*鼠标放到header中间两ico图标上变白色*/
+     .header_content ul li:hover {
+      opacity: 0.5;
+     }
+
+
+     /*中间左边导航栏样式*/
+     section .section_left {
+     	width: 210px;
+     	height: 100%;
+      /*这里有个用100%；*/
+      margin-top: 61px;
+      position: fixed;
+     	background-color: #424a5d;
+     }
+  section .section_left .men {
+    font-size: 0px;
+   
+  }
+ section .section_left .men h5 {
+   color: #f2f2f2;
+    font-weight: 700;
+    font-size: 14px;
+    margin-bottom: 20px;
+    text-align: center;
+ }
+ 
+     section .section_left p {
+     	width: 210px;
+     	height: 60px;
+      margin-top: 15px;
+      margin-bottom: 10px;
+ text-align: center;
+     }
+
+    section .section_left img {
+    	max-width: 60px;
+      width: 100%;
+      max-height: 60px;
+      height: 100%;
+    	 border-radius: 50%;
+    }
+    section .section_left nav li {
+      margin-bottom: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+    /*margin-top: 25px;*/
+    width: 190px;
+    height: 48px;
+        font-size: 12px;
+        line-height: 48px;
+    } 
+    section .section_left nav a {
+      width: 190px;
+      height: 48px;
+      display: inline-block;
+    }
+    /*鼠标上去变色*/
+    section .section_left nav a:hover {
+      background-color: #428bca;
+    }
+    section .section_left nav .nav_ico {
+      font-family: "icomoon";
+      font-style: normal;
+      font-size: 15px;
+      margin:0px 10px;
+    }
+  
+
+
+.zong {
+  margin-left: 210px;
+  padding-top: 61px;
+  position: relative;
+  overflow: hidden;
+}
+
+ .section_r_content  {
+  width: 75%;
+  float: left;
+ }
+  /*中间主题部分*/
+  .section_r_content .section_content_left {
+    width: 100%;
+  } 
+  /*设置第一部分的整体上边距和下边距*/
+  .section_r_content .section_content_left .row{
+    margin:5% 0%;
+  }
+
+  .section_r_content aside {
+    width: 25%;
+  }
+
+  .row {
+    width: 100%;
+    /*background-color: pink;*/
+  }
+
+
+  .row .ma i {
+    font-family: "icomoon";
+    font-style: normal;
+    font-size: 3.846em;
+    display: block;
+    text-align: center;
+    margin-top: 15%;
+  }
+  .row div {
+    display: inline-block;
+
+  }
+  .row .row_left1 {
+    margin-left: 10%;
+  }
+  .row .ma {
+    height: 240px;
+    width: 16.6666%;
+    /*添加box-sizing:border-box;鼠标放上去下面的元素不会下移（设置了box-shadow阴影）*/
+    box-sizing:border-box;
+/*    margin:0 1%;*/
+   
+    /*background-color: pink;*/
+  }
+  .row .ma h3 {
+    font-size: 1.92307em;
+    margin: 30% 10%;
+    border-bottom: 1px solid rgb(121,121,121);
+    width: 80%;
+    /*padding-bottom: 20px;*/
+    text-align: center;
+    padding-bottom: 20%;
+  }
+
+  /*绝对定位*/
+   .row .ma p {
+    visibility:hidden; 
+   text-align: center;
+   width: 80%;
+   margin: 0 10%;
+   font-size: 0.92307em;
+   word-break:break-word;
+   color: rgb(255,145,188);
+
+   }
+
+  /*鼠标放上去ma背景变白色*/
+  .row .ma:hover ,
+  .row .ma:hover h3,
+  .row .ma:hover p 
+
+  {
+  visibility:visible;
+  background-color: #fff;
+ border-bottom: 1px solid #fff;
+    
+  }
+    .row .ma:hover {
+       box-shadow:0px 2px 1px rgb(202,202,202);
+    }
+
+    /*中间部分的中间部分*/
+    .row .bm {
+      width: 30%;
+      margin: 0px 1.6%;
+      background-color: pink;
+      height: 250px; text-align: center;
+    }
+
+    .row .bc {
+         width: 30%;
+      margin: 0px 1.6%;
+      background-color: #444c57;
+      height: 250px; text-align: center;
+    }
+
+       /*中间第一个的外边距*/
+  
+
+
+  /*设置中间部分的中间部分ico图标*/
+  .row .bm i {
+    font-family: "icomoon";
+    font-style: normal;
+    /*font-size: 14px;*/
+  }
+    .row .bm  div {
+      display: block;
+    }
+  .row .bm h5 {
+        /*margin-top: 10px;*/
+    /*margin-bottom: 10px;*/
+  
+   /*width: 100%;*/
+   font-size: 14px;
+  }
+  .row .ma,
+  .bm{
+    float: left;
+  }
+
+
+
+  .bm .bb {
+    background-color: #f4f4f4;
+    width: 100%;
+    height: 35px;
+    line-height: 35px;
+    color: #c6c6c6;
+    margin-bottom: 15px;  
+  }
+  .bm .cc {
+     background-color: #444c57;
+    width: 100%;
+    height: 35px;
+    line-height: 35px;
+    color: #c6c6c6;
+    margin-bottom: 15px;  
+  } 
+  .bm .ccc{
+    width: 100%;
+    height: 35px;
+    line-height: 35px;
+    color: #c6c6c6;
+    margin-bottom: 15px; 
+  }
+  .bm .content_22 {
+        margin-top: 20px;
+    font-weight: 700;
+    margin-bottom: 30px;  
+    margin-left: 15px;
+     
+     text-align: left;
+  }
+  .bm p i {
+    color: #68dff0;
+  }
+  .bm p span {
+     padding-left: 10px;
+  }
+  .row .centent_img {
+    width: 120px;
+    height: 120px;
+    vertical-align: baseline;
+  }
+  .row .cir_img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 5%;
+  }
+
+  .bm_3_3 {
+    margin: 40px auto;
+  }
+  .bm_3_3 .mt{
+    font-size: 10px;
+    display: inline-block;
+        margin-top: 5px;
+    font-weight: 700;
+    margin-left: 15px;
+  }
+
+
+
+
+  .section_content_left {
+    width: 75%;
+    /*height: 100%;*/
+    float: left;
+  }
+
+  .bm_1_2 .p_top {
+    margin-top: 5px;
+  }
+   .bm_1_2  em {
+    font-style: normal;
+       /*margin-right: -260px;*/
+    margin-left: 40%;
+    color: #fff;
+   }
+    .bm_1_2  .fff {
+      color: #fff;
+    }
+
+    .row .bg{
+      background: url(../images/instagram.jpg) no-repeat center top;
+      color: #fff;
+    }
+    .row .size1 {
+    font-size: 5px;
+    margin-top: 5px;
+    margin-bottom: 30px;
+    }
+ 
+    .bg .bg_ico i{
+      font-family: "icomoon";
+      font-style: normal;
+      color: #fff;
+      font-size: 60px;
+    }
+     .bg .bg_ico {
+      margin-top: 35px;
+     }
+
+
+    .statistics {
+      max-width: 790px;
+      width: 100%;
+      height: 75%;
+    }
+     /*最下面的统计图*/
+    .statistics h3 {
+     margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 15px;
+    padding-bottom: 5px;
+    font-weight: normal;
+    font-size: 18px;
+    display: inline-block;
+    width: 100%;
+    font-weight: 700;
+    color: #989898;
+  }
+
+
+
+    .statistics .post_bottom {
+      border-top: 1px dashed #dbdce0;
+    display: block;
+    height: 58px;
+    width: 100%;
+    margin-left: 40px;
+   
+    position: relative;
+      }
+    .statistics .post_bottom:last-child{
+      border-bottom: 1px solid #dbdce0;
+    }
+
+     .statistics .ull {
+      margin-left: 25px;
+       border-bottom: 1px solid #dbdce0;
+       position: absolute;
+    width: 69%;
+  
+}
+  .statistics .post_bottom span {
+    position:absolute;
+    top: -8px;
+    left: -55px;
+  } 
+
+    /*统计图中的0*/
+  .statistics .ull b {
+    position:absolute;
+    top: 287px;
+    left :-15px;
+    /*font-style: normal;*/
+    font-weight: normal;
+  }
+
+    /*統計表的柱狀圖*/
+   .statistics .bar {
+        background: #ff865c;
+    max-height: 290px;
+    height: 100%;
+    position: relative;
+    width: 6%;
+    margin: 0px 4%;
+    float: left;
+    /*text-align: center;*/
+    z-index: 10;
+    border-radius: 5px 5px 0px 0px;
+
+   }
+    .statistics .bar:nth-child(1){
+   margin-top: 30px;
+    height: 265px;
+    }
+ .statistics .bar:nth-child(2){
+     margin-top: 95px;
+    height: 200px;
+ }
+   .statistics .bar:nth-child(3){
+     margin-top: 140px;
+    height: 155px;
+   }
+    .statistics .bar:nth-child(4){
+       margin-top: 190px;
+    height: 105px;
+   } 
+   .statistics .bar:nth-child(5){
+     margin-top: 75px;
+    height: 220px;
+   }    
+   .statistics .bar:nth-child(6){
+       margin-top: 245px;
+    height: 50px;
+     }      
+   .statistics .bar:nth-child(7){
+       margin-top: 10px;
+    height: 285px;
+   }        
+
+
+
+
+   .statistics .void {
+    margin-left: 4%;
+   }
+
+   .statistics .bar .value {
+    position: absolute;
+    bottom: 0;
+    background: #ff865c;
+    color: #68dff0;
+    width: 100%;
+    -webkit-border-radius: 5px 5px 0 0;
+    -moz-border-radius: 5px 5px 0 0;
+    border-radius: 5px 5px 0 0;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+   }
+
+
+/*统计图下面的字体*/
+.void .bar b {
+  position: absolute;
+  bottom: -30px;
+  left: 10px;
+  text-align: center;
+  font-weight: normal;
+  font-size: 11px;
+}
+
+
+
+
+/*鼠标放上统计图柱状图变黑色*/
+.void .bar:hover {
+  background-color: #000;
+}
+
+
+
+/*柱状图上的hover上方显示*/
+.statistics .bar .title {
+  position: absolute;
+  width: 100%;
+  height: 20px;
+  background-color: #000;
+  top: -30px;
+  color: #fff;
+  text-align: center;
+  line-height: 20px;
+  border-radius: 5px;
+  font-size: 10px;
+  display: none;
+}
+
+/*用伪类添加三角形*/
+.statistics .bar .title:after {
+ 
+  position: absolute;
+  content: "";
+  border-width: 5px;
+  border-style: solid;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-color: #000 transparent transparent transparent;
+}
+
+.statistics .bar:hover .title{
+ display: block;
+}
+
+
+
+
+/*主体的右边部分*/
+
+  /*文本右边部分*/
+  .section_content_right {
+    width: 25%;
+    /*height: 100%;*/
+    background-color: pink;
+    float: right;
+    padding-top: 20px;
+  }
+
+  .ds h3 {
+        color: #ffffff;
+    font-size: 16px;
+    margin: 0 10px;
+    line-height: 60px;
+    height: 60px;
+    /*margin: 0;*/
+    background: #ff865c;
+    text-align: center;
+  }
+/*.ds .desc {
+      border-bottom: 1px solid #eaeaea;
+    display: inline-block;
+    padding: 15px 0;
+    padding-bottom: 40px;
+    padding-left: 25%;
+    padding-right: 30px;
+    position: relative;
+}*/
+
+
+
+.decc .time_span {
+  width: 25px;
+  height: 25px;
+  background-color: #68dff0;
+  display: inline-block;
+line-height: 25px;
+border-radius: 10px;
+text-align: center;
+vertical-align: top;
+margin-right: 5px;
+}
+
+.decc .time_span i {
+  font-family: "icomoon";
+  font-style: normal;
+  display: inline-block;
+  color: #fff;
+}
+
+.decc .details p {
+  width: 155px;
+  height: 100%;
+  font-size: 11px;
+}
+.decc .details {
+  display: inline-block;
+}
+
+
+/*.details muted {
+  font-style: italic;
+  font-size: 10px;
+  text-transform: uppercase;
+}*/
+
+
+/*.desc .thumb_ico {
+  position: absolute;
+  top: 15%;
+  left: 10%;
+  border-radius: 10px;
+  width: 25px;
+  height: 25px;
+  background-color: #68dff0;
+  line-height: 25px;
+ text-align: center;
+}
+.desc .thumb_ico  i {
+  font-family: "icomoon";
+  font-style: normal;
+  color: #fff;
+}*/
+
+  /*右边的第二部分*/
+ .ds .decc {
+    /*color: #ffffff;*/
+    font-size: 7px;
+    padding: 10px 20px;
+    margin: 0 10px;
+    /*line-height: 75px;*/
+    height: 40px;
+    /*margin: 0;*/
+    background: #fff;
+    border-bottom: 1px solid #eaeaea;
+  }
+
+  /*鼠标放上去变色*/
+  .ds .decc:hover {
+    background-color: rgb(242,242,242);
+  }
+
+  .decc img {
+    max-width:35px;
+    height: 35px;
+    width: 100%;
+    border-radius: 50%; 
+    vertical-align: middle;
+  }
+
+  .decc small {
+    margin-left: 35px;
+    margin-top: -10px;
+    display: inline-block;
+    font-style: italic;
+    font-size: 10px;
+    /*font-style: normal;*/
+  }
+
+.ds .clock {
+  padding: 15px;
+}
+
+
+.ds .clock .table {
+  width: 100%;
+  background-color: yellow;
+  height: 50%;
+}
+
+
+
+
+/*footer */
+footer span {
+  color: #fff;
+}
+footer a {
+  color: #428bca;
+}
+
+
+
+
+footer .footer_text {
+  text-align: center;
+  /*display: inline-block;*/
+  /*font-size: 7px;*/
+  margin-left: 210px;
+  /*width: 100%;*/
+}
+
+.ds .cc {
+  padding-bottom: 25px;
+}
+
+ /*左边导航栏的样式*/
+ nav .gbp ,
+ .cgt ,
+ .bll ,
+ .fc ,
+ .br ,
+ .mc {
+  display: none;
+ }
+
+ /*导航上鼠标放上去样式*/
+ nav li:nth-child(2):hover  .gbp{
+    /*display: block;*/
+    /*position: inherit;*/
+ }
+
+
+
+ .table tr {
+  border-bottom: 1px solid #fff;
+ }
+ .table td {
+      border-bottom: none;
+    padding: 5px;
+    text-align: center;
+ }
+
+
+ .table .th {  
+    border: 1px solid #999;
+    border-bottom: none;
+    padding: -5px 5px;
+    margin: 0;
+    background-color: #ADD;
+    color: #333;
+    font: 80% 宋体;
+ }
+
+
+ .table {
+      border-collapse: collapse;
+      position: relative;
+ }
+
+ .table .table_her {
+    width: 80%;
+    height: 40px;
+    line-height: 40px;
+    /*position: absolute;*/
+    margin: 5% 10%;
+/*display: block;*/
+background-color: rgba(67,177,169,0.3);
+text-align: center;
+/*display: inline-block;*/
+ }
+
+
+ .aaaa {
+  display: inline;
+  white-space:nowrap; 
+  /*position: relative;*/
+ }
+
+
+
+ .aaaa {
+  /*display: inline;*/
+  /*white-space:nowrap; */
+/*padding-left:29%;
+padding-right: 24%;*/
+ }
+
+ thead{
+  position: relative;
+  height: 50px;
+
+ }
